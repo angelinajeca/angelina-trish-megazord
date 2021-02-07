@@ -2,6 +2,6 @@
 
 Groupe de musique: *BTS*
 
-⋅⋅* 🔴 Angelina De Silva Jeca 
+* 🔴 Angelina De Silva Jeca 
 
-⋅⋅* 🔵 Trish Nguyen
+* 🔵 Trish Nguyen
