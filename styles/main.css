@@ -17,7 +17,7 @@ picture{
     height: 100%;
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape){
     .heros{
         height: 56.25%;
         width: auto;
