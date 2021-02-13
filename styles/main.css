@@ -1,4 +1,11 @@
-:root {
+*{box-sizing: border-box;}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+:root{
     --bg:#161A1D;
     --text:#E9E4F0;
     --primary:#ef233c;
@@ -10,21 +17,23 @@
     --regular:'Montserrat', sans-serif;
   }
   
-*{box-sizing: border-box;}
-
 .heros{
+    position: absolute;
     height: 100%;
-    width: 100%;
-    margin: 0;
+    width: auto;
 }
 
 picture{
     position: absolute;
     height: 100%;
     width: 100%;
-}
+    }
 
 .container{
+    height: 100%;
+    }
+    
+img{
     height: 100%;
 }
 
