@@ -20,7 +20,7 @@ html, body{
 .heros{
     position: absolute;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 picture{
@@ -35,12 +35,13 @@ picture{
     
 img{
     height: 100%;
+    
 }
 
 @media (orientation: landscape){
     .heros{
         height: 56.25%;
-        width: auto;
+        width: 100%;
         }
     }
 
