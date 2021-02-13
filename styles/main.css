@@ -5,7 +5,11 @@
     --primary-alt:#d90429;
     --secondary:#E9E4F0;
     --secondary-alt:#C1C3D7;
+
+    --title:'Abril Fatface', cursive;
+    --regular:'Montserrat', sans-serif;
   }
+  
 *{box-sizing: border-box;}
 
 .heros{
