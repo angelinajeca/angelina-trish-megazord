@@ -10,8 +10,9 @@
 
 .heros{
     height: 100%;
-    width: 100%;
+    width: auto;
     margin: 0;
+    background-color: green;
 }
 
 picture{
@@ -23,6 +24,7 @@ picture{
 .container{
     height: 100%;
 }
+
 
 @media (orientation: landscape){
     .heros{
