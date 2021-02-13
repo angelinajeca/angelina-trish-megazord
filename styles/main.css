@@ -17,12 +17,11 @@ picture{
     height: 100%;
 }
 
-@media screen and (min-width: 700px) {
+@media (orientation: landscape) {
     .heros{
-        height: auto;
-        width: 56.25%;
-        margin: 0;
-    }
+        height: 56.25%;
+        width: auto;
+        }
     }
 
 /* la fin de la feuille de style */
