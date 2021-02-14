@@ -17,9 +17,16 @@ picture{
     background-image: linear-gradient(to right top,#fbcabb,#f9b0c3,#e3abce,#ceb6d9,#a2c8ec);  
 }
 
-.contraste {
+.disco-contraste {
     position: absolute;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient( to top,rgba(22, 26, 29,0.6), rgba(255,0,0,0));  
+}
+
+.txt {
+    width: 100%;
+    height: auto;
+    font-family: var(--title);
+    color: var(--text);
 }
