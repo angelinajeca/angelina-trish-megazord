@@ -12,7 +12,6 @@ html, body{
     --primary-alt:#d90429;
     --secondary:#E9E4F0;
     --secondary-alt:#C1C3D7;
-
     --title:'Abril Fatface', cursive;
     --regular:'Montserrat', sans-serif;
   }
@@ -20,19 +19,23 @@ html, body{
 .heros{
     position: absolute;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
+div{
+    width: 100%;
+    height: 100%;
+}
 picture{
     position: absolute;
     height: 100%;
     width: 100%;
-    }
+}
 
 .container{
     height: 100%;
-    }
-    
+}
+
 img{
     height: 100%;
 }
@@ -40,9 +43,9 @@ img{
 @media (orientation: landscape){
     .heros{
         height: 56.25%;
-        width: auto;
+        width: 100%;
         }
-    }
+}
 
 /* la fin de la feuille de style */
 

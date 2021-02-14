@@ -12,17 +12,25 @@
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header> 
-    <nav class="heros">
+    <div class="heros">
       <picture>
-        <img src="img/members-cover-desktop.jpg">
+        <source srcset="img/members-cover-desktop.jpg" media="(orientation: landscape)">
+        <img src="img/members-cover-mobile.jpg">
       </picture>
+      <div class="main-contraste"></div>
       <div class="container">
         <div class="row"></div>
       </div>
-    </nav>
+    </div>
   </header>
   <script src="scripts/main.js"></script>
 </body>
