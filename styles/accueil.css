@@ -21,4 +21,17 @@ img{
     opacity: 30%;
 }
 
+.container{
+    display: block;
+    width: 100%; 
+}
+
+h1{
+    font-size: 100px;
+    font-family: var(--title);
+}
+
+
+
+
 
