@@ -39,16 +39,17 @@ h2 {
     font-family: var(--regular);
 }
 
-.btnSavoir {
+
+header {
+    height: 100%;
+    width: 100%;
+}
+
+.btnSavoir{
     color: var(--text);
     font-family: var(--regular);
     background-color: var(--primary);
     border: 0;
     padding: 7px 24px;
     border-radius: 8px;
-}
-
-header {
-    height: 100%;
-    width: 100%;
 }

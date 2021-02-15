@@ -29,9 +29,29 @@ img{
 h1{
     font-size: 100px;
     font-family: var(--title);
+    color: var(--text);
+
 }
 
+h2{
+    color: var(--text);
+    font-family: var(--regular);
+}
 
+.row{
+    height: 100%;
+}
 
+.btnSavoir{
+    color: var(--text);
+    font-family: var(--regular);
+    background-color: var(--primary);
+    border: 0;
+    padding: 7px 24px;
+    border-radius: 8px;
+}
 
-
+.txt{ 
+    color: var(--text);
+    margin: 25px;
+}

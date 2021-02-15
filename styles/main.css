@@ -28,9 +28,8 @@ picture{
     width: 100%;
 }
 
-.container-fluid{
+.container{
     height: 100%;
-   
 }
 
 img{
@@ -44,6 +43,7 @@ img{
         width: 100%;
         }
 }
+
 
 /* la fin de la feuille de style */
 
