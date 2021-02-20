@@ -71,7 +71,6 @@ header {
   
 .card-body {
     padding: 20px;
-    color: var(--text);
     height: 100%;
 }
 .card-title {
@@ -82,16 +81,30 @@ background-color: var(--bg);
 }
 
 .card-body > h1 {
-    text-align: center;
-    font-size: 35px;
+    font-size: 25px;
+    color: var(--secondary-alt);
 }
 
 .card-body > h2 {
-
+    font-size: 20px;
+    color: var(--secondary);
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
+
+.card-body > .btnSavoir {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+h3{ 
+    font-size: 50px;
+    color: var(--text);
+    font-family: var(--title);
+    text-align: center;
+    padding: 30px;
+}
