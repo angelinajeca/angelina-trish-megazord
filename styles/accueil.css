@@ -1,4 +1,4 @@
-img{
+.imgcover{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -7,7 +7,7 @@ img{
 }
 
 @media (orientation: landscape){
-    img{
+    .imgcover{
         object-fit: cover;
         object-position: 0% 22%;
         }
@@ -57,11 +57,37 @@ h2{
 }
 
 .img-fluid{
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
+
 .main{
-    position: absolute;
+    position: absolute; 
     width: 100%;
     height: 100%;
 }
+
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+.card-body{
+    width: 100%;
+}
+
+.btnSavoirCarte{
+    color: var(--text);
+    font-family: var(--regular);
+    background-color: var(--primary);
+    border: 0;
+    padding: 7px 24px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+

@@ -24,7 +24,7 @@
     <div class="heros">
       <picture>
         <source srcset="img/members-cover-desktop.jpg" media="(orientation: landscape)">
-        <img src="img/members-cover-mobile.jpg">
+        <img class="imgcover" src="img/members-cover-mobile.jpg">
       </picture>
       <div class="main-contraste"></div>
       <div class="container">
@@ -33,27 +33,51 @@
               <div class="txt">
                 <h1 class="text-center"> BTS </h1>
                 <h2 class="text-center"> BTS est un groupe de Kpop formé en 2013 par Big Hit Entertainment. </h2>
-                <button class="btnSavoir">En savoir plus</button>
+                <button class="btnSavoir" href="#main">En savoir plus</button>
               </div>
             </div>
         </div>
         </div>
       </div>
     </div>
-
+  </header>
+  <main>
     <div class="main">
-      <div class="container-fluid">
+      <div class="container-fluid" id="main">
         <div class="row">
-            <div class="col-3 col-md-3">
-              <div class="d-none d-md-block">
-                <picture>
+            <div class="col-md-3 d-none d-md-block">
                   <img src="img/a_venir.png" class="img-fluid">
-                </picture>
             </div>
-          </div>
+            <div class="contenu-principal col-md-9 d-none d-md-block">
+              <section> 
+                <div class="row">
+                  <h1>Membres du groupe</h1>
+                  <div class="col-12">
+
+                    <div class="card">
+                      <img src="img/rm.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h3 class="card-title">RM</h3>
+                        <h4>Leader/Rappeur</h4>
+                          Kim NamJoon (également connu sous le nom de RM) est le leader et le rappeur
+                          principal de BTS.
+                      </div>
+                      <div class="card-footer">
+                        <button class="btnSavoirCarte" href="https://fr.wikipedia.org/wiki/RM_(rappeur)">En savoir plus</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </section>
+            </div>
         </div>
       </div>
-  </header>
+    </div>
+
+   
+
+  </main>
   <script src="scripts/main.js"></script>
 </body>
 </html>
