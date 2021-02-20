@@ -1,4 +1,8 @@
-img {
+html,body {
+    background-color: var(--bg);
+}
+
+img.heros {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -11,7 +15,7 @@ picture{
 
 .gradient {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     filter: brightness(80%);
     background-image: linear-gradient(to right top,#fbcabb,#f9b0c3,#e3abce,#ceb6d9,#a2c8ec);  
@@ -19,8 +23,8 @@ picture{
 
 .disco-contraste {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient( to top,rgba(22, 26, 29,0.5), rgba(255,0,0,0));  
 }
 
@@ -53,3 +57,41 @@ header {
     padding: 7px 24px;
     border-radius: 8px;
 }
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.album {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+  }
+  
+.card-body {
+    padding: 20px;
+    color: var(--text);
+    height: 100%;
+}
+.card-title {
+    padding-bottom: 10px;
+}
+.card {
+background-color: var(--bg);
+}
+
+.card-body > h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.card-body > h2 {
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
