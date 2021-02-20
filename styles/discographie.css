@@ -70,7 +70,8 @@ header {
   }
   
 .card-body {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     height: 100%;
 }
 .card-title {
@@ -99,6 +100,7 @@ ul {
 .card-body > .btnSavoir {
     margin-left: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 
 h3{ 
