@@ -1,3 +1,7 @@
+body{
+    background-color: var(--bg)
+}
+
 .imgcover{
     position: absolute;
     width: 100%;
@@ -6,12 +10,6 @@
     object-position: 50% 15%;
 }
 
-@media (orientation: landscape){
-    .imgcover{
-        object-fit: cover;
-        object-position: 0% 22%;
-        }
-}
 
 .main-contraste {
     position: absolute;
@@ -30,13 +28,33 @@ h1{
     font-size: 100px;
     font-family: var(--title);
     color: var(--text);
-
 }
 
 h2{
     color: var(--text);
     font-family: var(--regular);
 }
+
+h3{ 
+    font-size: 50px;
+    color: var(--text);
+    font-family: var(--title);
+    text-align: center;
+    padding: 30px;
+}
+
+h4{
+    font-size: 50px;
+    font-family: var(--title);
+    color: var(--primary-alt);  
+}
+
+h5{
+    color: var(--primary);
+    font-family: var(--regular);
+    font-weight: bold;
+}
+
 
 .row{
     height: 100%;
@@ -78,6 +96,8 @@ h2{
 
 .card-body{
     width: 100%;
+    font-family: var(--regular);
+
 }
 
 .btnSavoirCarte{
@@ -89,5 +109,25 @@ h2{
     border-radius: 8px;
     width: 100%;
 }
+
+@media screen and (min-width: 768px){
+    header{
+        height: 100%;
+        width: 100%;
+        }    
+}
+
+@media (orientation: landscape){
+    .imgcover{
+        object-fit: cover;
+        object-position: 0% 22%;
+        }
+
+    header{
+        height: 56.25%;
+        width: 100%;
+        }    
+}
+
 
 
