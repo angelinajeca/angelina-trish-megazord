@@ -32,6 +32,11 @@ picture{
     height: 100%;
 }
 
+.container-fluid{
+    height: 100%;
+}
+
+
 img{
     height: 100%;
     
