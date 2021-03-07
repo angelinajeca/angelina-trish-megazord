@@ -1,5 +1,5 @@
 body{
-    background-color: var(--bg)
+    background-color: var(--bg);
 }
 
 .imgcover{
@@ -110,11 +110,10 @@ h5{
     width: 100%;
 }
 
-@media screen and (max-width: 992px){
-    header{
-        height: 100%;
-        width: 100%;
-        }    
+
+header {
+    height: 100%;
+    width: 100%;
 }
 
 @media (orientation: landscape){
@@ -126,8 +125,5 @@ h5{
     header{
         height: 56.25%;
         width: 100%;
-        }    
+        }
 }
-
-
-
