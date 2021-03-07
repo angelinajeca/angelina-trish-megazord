@@ -43,7 +43,6 @@ h2 {
     font-family: var(--regular);
 }
 
-
 header {
     height: 100%;
     width: 100%;
@@ -116,6 +115,8 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
+
+
 @media screen and (min-width: 576px){
     .section {
         padding-top: 40px;
@@ -127,4 +128,5 @@ padding-bottom: 20px;
 
       }
 }
+
 
