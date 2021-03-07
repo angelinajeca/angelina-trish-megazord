@@ -1,15 +1,5 @@
 *{box-sizing: border-box;}
 
-html{
-    height: 100%;;
-    margin-top: 0;
-}
-
-body{
-    height: 100%;;
-}
-
-
 :root{
     --bg:#0f0f0f;
     --text:#E9E4F0;
@@ -54,11 +44,23 @@ img{
 }
 
 main{
-    height: 100%;
+    height: auto;
+    position: relative;
 }
 
 .navbar{
     background-color: var(--primary-alt);
+}
+
+.footer {
+    width: 100%;
+}
+.foot {
+    background-color: #18181A;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffff;
+    width: 100%;
 }
 
 /* la fin de la feuille de style */
