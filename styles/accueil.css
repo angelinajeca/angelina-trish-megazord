@@ -1,4 +1,6 @@
+
 body{
+    height:100%;
     background-color: var(--bg);
 }
 
@@ -17,11 +19,6 @@ body{
     height: 100%;
     background-color: var(--primary-alt);
     opacity: 30%;
-}
-
-.container{
-    display: block;
-    width: 100%; 
 }
 
 h1{
@@ -111,7 +108,7 @@ h5{
 }
 
 
-header {
+header{
     height: 100%;
     width: 100%;
 }
