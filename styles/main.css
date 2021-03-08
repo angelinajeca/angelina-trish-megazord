@@ -44,15 +44,14 @@ img{
         }
 }
 
-
 .navbar{
     background-color: var(--primary-alt);
 }
 
-
 .footer {
     width: 100%;
 }
+
 .foot {
     margin-top: 20px;
     padding-top: 20px;
@@ -61,8 +60,6 @@ img{
     color: var(--text);
     font-family: var(--regular);
     width: 100%;
-
-
 }
 
 .foot .row {
@@ -79,6 +76,22 @@ width: 100%;
     cursor: pointer;
 }
 
+.nom_createur:hover{
+    color: var(--secondary-alt);
+    cursor: pointer;
+}
+
+.modal-title{
+    color: var(--primary-alt);
+    font-family: var(--title);
+}
+
+.modal-img{
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* la fin de la feuille de style */
 
