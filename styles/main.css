@@ -2,6 +2,7 @@
 
 :root{
     --bg:#0f0f0f;
+    --footer: #18181A;
     --text:#E9E4F0;
     --primary:#ef233c;
     --primary-alt:#d90429;
@@ -48,16 +49,36 @@ img{
     background-color: var(--primary-alt);
 }
 
+
 .footer {
     width: 100%;
 }
 .foot {
-    background-color: #18181A;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #ffff;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--footer);
+    color: var(--text);
+    font-family: var(--regular);
     width: 100%;
+
+
 }
+
+.foot .row {
+width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.link:hover {
+    color: var(--secondary-alt);
+    cursor: pointer;
+}
+
 
 /* la fin de la feuille de style */
 
