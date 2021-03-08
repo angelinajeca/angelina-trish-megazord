@@ -1,0 +1,86 @@
+*{box-sizing: border-box;}
+
+:root{
+    --bg:#0f0f0f;
+    --footer: #18181A;
+    --text:#E9E4F0;
+    --primary:#ef233c;
+    --primary-alt:#d90429;
+    --secondary:#E9E4F0;
+    --secondary-alt:#C1C3D7;
+    --title:'Abril Fatface', cursive;
+    --regular:'Montserrat', sans-serif;
+}
+  
+.heros{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+picture{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+img{
+    height: 100%;
+}
+
+@media (orientation: landscape){
+    .heros{
+        height: 56.25%;
+        width: 100%;
+        }
+}
+
+
+.navbar{
+    background-color: var(--primary-alt);
+}
+
+
+.footer {
+    width: 100%;
+}
+.foot {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--footer);
+    color: var(--text);
+    font-family: var(--regular);
+    width: 100%;
+
+
+}
+
+.foot .row {
+width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.link:hover {
+    color: var(--secondary-alt);
+    cursor: pointer;
+}
+
+
+/* la fin de la feuille de style */
+
+@import url("accueil.css");
+@import url("discographie.css");
