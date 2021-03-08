@@ -157,14 +157,3 @@ h3{
 .video > h2 {
     font-family: var(--regular);
 }
-
-.modal-body {
-
-}
-
-.modal-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-}
