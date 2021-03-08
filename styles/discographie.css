@@ -111,8 +111,8 @@ h3{
 }
 
 .section {
-padding-top: 20px;
-padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -156,4 +156,15 @@ padding-bottom: 20px;
 
 .video > h2 {
     font-family: var(--regular);
+}
+
+.modal-body {
+
+}
+
+.modal-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
 }
