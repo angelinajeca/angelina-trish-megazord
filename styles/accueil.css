@@ -137,5 +137,28 @@ iframe{
     height: 100%;
 }
 
+.swiper-slide{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; 
+}
 
+.img-promotion{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+section .swiper-container .swiper-pagination-bullet.bullet-active{
+    background: var(--primary-alt);
+    opacity:1;
+}
+
+section .swiper-container .swiper-pagination-bullet{
+    opacity: 1;
+    background: var(--secondary);
+}
 
