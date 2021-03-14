@@ -93,8 +93,14 @@ width: 100%;
     margin-right: auto;
 }
 
+.swiper-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
 /* la fin de la feuille de style */
 
 @import url("accueil.css");
 @import url("discographie.css");
-
