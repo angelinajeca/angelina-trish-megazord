@@ -18,14 +18,15 @@ sectionList.forEach(section => {
     const textes = section.querySelector('h3');
     const cartes  = section.querySelector('.cards');
     const carrousel  = section.querySelector('.swiper-container');
-    const video  = section.querySelector('.video');
+    const video  = section.querySelector('.video'); 
 
 
     gsap.timeline({
         scrollTrigger:{
             markers: true,
-            start:'top bottom',
+            start:'top 75%',
             trigger: section, 
+            toggleActions: 'play complete none reverse',
         }
     })
     .from(cartes,{
