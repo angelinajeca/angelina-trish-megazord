@@ -59,7 +59,7 @@ let body = document.body;
 
 gsap.to('.contenant', {
   scrollTrigger: {
-    markers: true,
+    markers: false,
     trigger: '.contenant',
     onUpdate: (e) => {
       body.classList.add('is-scrolling');
