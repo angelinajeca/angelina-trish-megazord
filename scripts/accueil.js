@@ -20,25 +20,26 @@ sectionList.forEach(section => {
     const carrousel  = section.querySelector('.swiper-container');
     const video  = section.querySelector('.video'); 
 
-
     gsap.timeline({
         scrollTrigger:{
-            markers: true,
-            start:'top 75%',
+            markers: false,
+            start:'top 70%',
+            end: 'bottom 15%',
             trigger: section, 
             toggleActions: 'play complete none reverse',
         }
-    })
-    .from(cartes,{
-        scale: 0.8,
-        y: 100,
-        opacity: 0,
     })
     .from(textes,{
         x: -100,
         opacity: 0,
     })
-   
+
+    .from(cartes,{
+        scale: 0.8,
+        y: 100,
+        opacity: 0,
+    })
+
     .from(video,{
         scale: 0.8,
         y: 100,
