@@ -141,3 +141,59 @@ iframe{
     width: 100%;
     height: 100%;
 }
+
+/**spritesheet**/
+
+.contenant {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.sprite {
+    position: fixed;
+    top: 3%;
+    width: 24vw;
+    height: 24vw;
+    background-size: 100%;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(30); 
+}
+
+.direction-down .sprite {
+    background-image: url('https://i.imgur.com/LX2AEkm.png');
+    animation: boy-idle 1.5s infinite steps(30);
+}
+
+.direction-down.is-scrolling .sprite {
+    background-image: url('https://i.imgur.com/J4vsn10.png');
+    animation: boy-forward 1.5s infinite steps(30);
+}
+
+.direction-up .sprite {
+    background-image: url('https://i.imgur.com/LX2AEkm.png');
+    animation: boy-idle 1.5s infinite steps(30);
+}
+
+.direction-up.is-scrolling .sprite {
+    background-image: url('https://i.imgur.com/j9oizqN.png');
+    animation: boy-idle 1.5s infinite steps(30);
+}
+
+@keyframes boy-idle {
+    from { background-position: 0 0; }
+    to { background-position: 0 -3000%; }
+}
+
+@keyframes boy-forward {
+    from { background-position: 0 0; }
+    to { background-position: 0 -3000%; }
+}
+
+@keyframes boy-backward {
+    from { background-position: 0 0; }
+    to { background-position: 0 -3000%; }
+}
