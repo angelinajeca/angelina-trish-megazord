@@ -23,7 +23,7 @@ sectionList.forEach(section => {
     gsap.timeline({
         scrollTrigger:{
             markers: false,
-            start:'top 70%',
+            start:'top 60%',
             end: 'bottom 15%',
             trigger: section, 
             toggleActions: 'play complete none reverse',
