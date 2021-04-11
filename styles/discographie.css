@@ -153,8 +153,8 @@ iframe{
 }
 
 .sprite {
-    position: fixed;
-    top: 3%;
+    position: sticky;
+    top: 50%;
     width: 24vw;
     height: 24vw;
     background-size: 100%;
@@ -162,6 +162,7 @@ iframe{
     animation-iteration-count: infinite;
     animation-timing-function: steps(30); 
 }
+
 
 .direction-down .sprite {
     background-image: url('https://i.imgur.com/LX2AEkm.png');
