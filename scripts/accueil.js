@@ -51,3 +51,33 @@ sectionList.forEach(section => {
         opacity: 0,
     })
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+let timeout;
+let body = document.body;
+
+gsap.to('.contenant', {
+  scrollTrigger: {
+    markers: true,
+    trigger: '.contenant',
+    onUpdate: (e) => {
+      body.classList.add('is-scrolling');
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        body.classList.remove('is-scrolling');
+      }, 250)
+      
+      if(e.direction == 1) {
+        body.classList.add('direction-down');
+        body.classList.remove('direction-up');
+      } 
+      if(e.direction == -1) {
+        body.classList.remove('direction-down');
+        body.classList.add('direction-up');
+      }
+    }
+  }
+})
+
+
