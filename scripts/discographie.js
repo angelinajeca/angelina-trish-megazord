@@ -53,6 +53,7 @@ gsap.to('.contenant', {
   scrollTrigger: {
     markers: false,
     trigger: '.contenant',
+    scrub: 0.2,
     onUpdate: (e) => {
       body.classList.add('is-scrolling');
       clearTimeout(timeout);
