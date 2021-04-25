@@ -395,14 +395,21 @@ const questionList = [
         radio.addEventListener("change", () => {
           if (radio.checked) {
             if (radio.value == this.questionList[this.index].r) {
+              this.score++;
               this.goodAnswer();
             } else {
-            this.wrongAnswer();
+              this.score--;
+              if(this.score == -1) { this.score = 0 };
+              this.wrongAnswer();
             }
-            if (this.index < this.questionList.length) {
+            if (this.index <= this.questionList.length - 1) {
+              if (this.index == this.questionList.length -1) {
+                this.div.innerText = `${this.score}/8`;
+                this.div.insertAdjacentHTML('afterbegin', '<strong>Pointage</strong><br>') ;
+              return false;
+            }
               this.index++;
-              
-              this.setVisible(this.index);
+              this.setVisible(this.index); 
             }
           }
         });
@@ -492,7 +499,7 @@ const questionList = [
           },          
        );
     
-        gsap.from('.animation-img-vrai',
+        gsap.from('.animation-bonne',
               { 
           duration: '1.5',
           ease: 'power3.out',

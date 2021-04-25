@@ -119,7 +119,7 @@ width: 100%;
     height: 450px;
     width: 450px;
     position: relative;
-    transform: translateX(-70%) translateY(-15%);
+    transform: translateX(-75%) translateY(-15%);
     justify-content: center;
     opacity: 1;
   }
@@ -129,8 +129,10 @@ width: 100%;
 .animation-complet-vrai {
     height: 200px;
     width: 350px;
-    position: absolute;
+    position: relative;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
     opacity: 0;
     z-index: 5;
