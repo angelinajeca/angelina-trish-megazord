@@ -70,6 +70,6 @@ gsap.to('.contenant', {
       }
     }
   }
-})
+});
 
 
