@@ -202,97 +202,18 @@ btn.addEventListener('click', () => {
 }); */
 
 // QUIZ //
+const questionList =
 
-const questionList = [
-  
-  {
-    q: "En quelle année BTS à débuter ?",
-    o1: "2015",
-    o2: "2013",
-    o3: "2017",
-    o4: "2014",
-    
-    r: 2
-  },
-    
-  {
-    q: "Combien y a-t-il de membres dans BTS ?",
-    o1: "4",
-    o2: "6",
-    o3: "5",
-    o4: "7",
-    
-    r: 4
-  },
-    
-  {
-    q: "Quelle chanson ont-ils chantée aux Grammys 2021 ?",
-    o1: "Life Goes On",
-    o2: "Dynamite",
-    o3: "Black Swan",
-    o4: "On",
-    
-    r: 2
-  },
-    
-  {
-    q: "Leur compte Twitter @BTS_twt à combien d'abonnés ?",
-    o1: "17.2 M",
-    o2: "25.0 M",
-    o3: "34.5 M",
-    o4: "40.5 M",
-    
-    r: 3
-  },
-     
-   {
-    q: "Qui est le leader de BTS ?",
-    o1: "RM (Kim Namjoon)",
-    o2: "Suga (Min Yoongi)",
-    o3: "Jin (Kim Seokjin)",
-    o4: "Jungkook (Jeon Jungkook)",
-    
-  r: 1
-  },
-    
-  { 
-  q: "Qui sont les vocalistes de BTS ?",
-  o1: "RM, Suga, J-Hope",
-  o2: "Jimin, Jin, Jungkook, V",
-  o3: "Suga, Jin, Jungkook",
-  o4:"J-Hope, Suga, RM, V",
-    
-  r: 2
-  } ,
-    
-  {
-   q: "Quel est le nom de leur premier album ?",
-    o1:"Dark & Wild",
-    o2: "Love Yourself Her",
-    o3: "O!RUL8,2?",
-    o4: "Wings" ,
-    
-    r: 3
-  },
-    
-  {
-   q: "La musique 'Blood, Sweat & Tears' fait partie de quel album?", 
-    o1:"Skool Luv Affair",
-    o2: "Wings",
-    o3: "Love Yourself : Tear",
-    o4: "Dark & Wild", 
-    
-    r: 2
-  }
-    
-  ];
-  
+  fetch('https://bts-discographie.go.yj.fr/json/')
+  .then(response => response.json())
+  .then(data => {new Quiz(data.questionList)});
+
   class Quiz {
-    constructor(tableau) {
+    constructor(questionList) {
       this.index = 0;
       this.score = 0;
-      this.questionList = tableau;
-      
+      this.questionList = questionList;
+ 
       this.questionList.forEach((question, value) => {
         this.creerHtml(question, value + 1);
       });
@@ -555,7 +476,6 @@ const questionList = [
 
   
   }
+
+
   
-  new Quiz(questionList);
-
-
