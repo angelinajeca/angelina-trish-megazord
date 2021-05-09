@@ -76,16 +76,16 @@ gsap.to('.contenant', {
 
 const questionList =
 
-  fetch('https://bts-discographie.go.yj.fr/json/')
+  fetch('https://bts-discographie.go.yj.fr/bts-api/index.php/wp-json/wp/v2/posts/')
   .then(response => response.json())
   .then(data => {new Quiz(data.questionList)});
-  
+
   class Quiz {
-    constructor(tableau) {
+    constructor(questionList) {
       this.index = 0;
       this.score = 0;
-      this.questionList = tableau;
-      
+      this.questionList = questionList;
+ 
       this.questionList.forEach((question, value) => {
         this.creerHtml(question, value + 1);
       });
@@ -100,7 +100,7 @@ const questionList =
       this.modalbody.appendChild(this.div);
   
       this.strong = document.createElement("strong");
-      this.strong.innerText = quest.q;
+      this.strong.innerText = quest.acf.q;
       this.div.appendChild(this.strong);
   
       this.br = document.createElement("br");
@@ -116,7 +116,7 @@ const questionList =
         this.div.appendChild(radio);
   
   
-        label.innerText = quest.o1;
+        label.innerText = quest.acf.o1;
         this.div.appendChild(label);
   
         this.br = document.createElement("br");
@@ -133,7 +133,7 @@ const questionList =
         this.div.appendChild(radio);
   
     
-        label.innerText = quest.o2;
+        label.innerText = quest.acf.o2;
         this.div.appendChild(label);
   
         this.br = document.createElement("br");
@@ -149,7 +149,7 @@ const questionList =
         radio.setAttribute("value", "3");
         this.div.appendChild(radio);
         
-        label.innerText = quest.o3;
+        label.innerText = quest.acf.o3;
         this.div.appendChild(label);
   
         this.br = document.createElement("br");
@@ -165,7 +165,7 @@ const questionList =
         radio.setAttribute("value", "4");
         this.div.appendChild(radio);
   
-        label.innerText = quest.o4;
+        label.innerText = quest.acf.o4;
         this.div.appendChild(label);
   
         this.br = document.createElement("br");
@@ -187,7 +187,7 @@ const questionList =
       Reponse.forEach((radio) => {
         radio.addEventListener("change", () => {
           if (radio.checked) {
-            if (radio.value == this.questionList[this.index].r) {
+            if (radio.value == this.questionList[this.index].acf.r) {
               this.score++;
               this.goodAnswer();
             } else {
@@ -348,7 +348,5 @@ const questionList =
 
   
   }
+
   
-
-
-
