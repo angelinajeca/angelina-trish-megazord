@@ -72,7 +72,8 @@ gsap.to('.contenant', {
   }
 });
 
-// QUIZ //
+// QUIZ // 
+
 
 const questionList =
 
@@ -106,7 +107,7 @@ const questionList =
       this.br = document.createElement("br");
       this.div.appendChild(this.br);
   
-      if ("o1" in quest) {
+      if ("o1" in quest.acf) {
         let radio = document.createElement("input");
         let label = document.createElement("label");      
         
@@ -123,7 +124,7 @@ const questionList =
         this.div.appendChild(this.br);
       }
   
-      if ("o2" in quest) {
+      if ("o2" in quest.acf) {
         let radio = document.createElement("input");
         let label = document.createElement("label");      
         
@@ -140,7 +141,7 @@ const questionList =
         this.div.appendChild(this.br);
       }
   
-      if ("o3" in quest) {
+      if ("o3" in quest.acf) {
         let radio = document.createElement("input");
         let label = document.createElement("label"); 
         
@@ -156,7 +157,7 @@ const questionList =
         this.div.appendChild(this.br);
       }
   
-      if ("o4" in quest) {
+      if ("o4" in quest.acf) {
         let radio = document.createElement("input");
         let label = document.createElement("label");    
         
