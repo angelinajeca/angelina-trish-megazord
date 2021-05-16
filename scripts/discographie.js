@@ -79,7 +79,7 @@ const questionList =
 
   fetch('https://bts-discographie.go.yj.fr/bts-api/index.php/wp-json/wp/v2/posts/')
   .then(response => response.json())
-  .then(data => {new Quiz(data.questionList)});
+  .then(data => {new Quiz(data)});
 
   class Quiz {
     constructor(questionList) {
